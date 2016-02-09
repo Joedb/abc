@@ -147,9 +147,9 @@ void seq_abc (int n_obs,
   for (int k = 0; k < 3; k++)
     output_theta[k] = theta_part[l-1][k];
   if (noisy == 0)
-    printf("\nEstimated parameters ABC with observations:%d\n%f\t%f\t%f\n",n_obs,output_theta[0],output_theta[1],output_theta[2]);
+    printf("\nEstimated parameters ABC with %d obs:\n%f\t%f\t%f\n",n_obs,output_theta[0],output_theta[1],output_theta[2]);
   else
-    printf("\nEstimated parameters noisy ABC with observations:%d\n%f\t%f\t%f\n",n_obs,output_theta[0],output_theta[1],output_theta[2]); 
+    printf("\nEstimated parameters noisy ABC with %d obs:\n%f\t%f\t%f\n",n_obs,output_theta[0],output_theta[1],output_theta[2]); 
 }
 
 int main () {
